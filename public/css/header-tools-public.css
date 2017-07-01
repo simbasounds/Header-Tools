@@ -1,0 +1,33 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+@media (max-width:992px) {
+
+	.headroom {
+	  will-change: transform;
+	  -webkit-transition: -webkit-transform 200ms linear;
+	  transition: -webkit-transform 200ms linear;
+	  -o-transition: transform 200ms linear;
+	  transition: transform 200ms linear;
+	  transition: transform 200ms linear, -webkit-transform 200ms linear;
+		left: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 100%;
+		z-index: 100;
+	}
+
+	.headroom--pinned {
+	    -webkit-transform: translateY(0%);
+	        -ms-transform: translateY(0%);
+	            transform: translateY(0%);
+	}
+
+	.headroom--unpinned {
+	    -webkit-transform: translateY(-100%);
+	        -ms-transform: translateY(-100%);
+	            transform: translateY(-100%);
+	}
+}
